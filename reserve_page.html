@@ -17,10 +17,16 @@
 
     <style>
       body{
+<<<<<<< HEAD
         margin-bottom: 100px;
         min-width: 1200px;
         justify-content: center;
         display:flex;
+=======
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 100px;
+>>>>>>> 8b84941c86e3c2e40cc5f37651338b3ccafd838c
       }
       .card_inside:hover{
         transition: background-color .6s;
@@ -33,10 +39,13 @@
       a:visited p{
         color:red;
       }
+<<<<<<< HEAD
       .outer_layout{
         margin-left: 100px;
         margin-right: 100px;
       }
+=======
+>>>>>>> 8b84941c86e3c2e40cc5f37651338b3ccafd838c
     </style>
     <script>
 
@@ -218,8 +227,13 @@
         var graph_area = document.getElementById('graph_area1');
 
         var Options = {
+<<<<<<< HEAD
           width : 380,
           height : 380,
+=======
+          width : 400,
+          height : 400,
+>>>>>>> 8b84941c86e3c2e40cc5f37651338b3ccafd838c
           colors: [color_theme],
           legend: { position: 'none' },
           chart: {
@@ -258,8 +272,13 @@
             title: '월별 방문객 누적 그래프',
             curveType: 'function',
             legend: { position: 'bottom' },
+<<<<<<< HEAD
             width : 500,
             height : 350,
+=======
+            width : 550,
+            height : 400,
+>>>>>>> 8b84941c86e3c2e40cc5f37651338b3ccafd838c
             left : 0,
             colors: [color_theme],
             //legend position none
@@ -277,6 +296,7 @@
     </script>
   </head>
 
+<<<<<<< HEAD
   <body>
     <div class="outer_layout">
       <div class="container-fluid" style="margin-top: 8px; min-width:1080px;">
@@ -340,5 +360,69 @@
       <!--fin of outer layout if add outer move right-->
     </div>
     <!--fin of body-->
+=======
+
+  <body style = "min-width:1080px;">
+    <nav class="navbar">
+      <div class="container-fluid">
+          <a class="navbar-brand" style="margin-top: 8px;" href="#">JoinUs</a>
+      </div>
+    </nav>
+    <div class="container-fluid shadow">
+      <div class="row">
+
+        <script>
+
+          document.write('<div class="card-body"><div class="row">')
+          for(var i=0; i<theme.length; i++){
+            document.write(
+              '<div class="col-sm-2" style = "margin-bottom: 20px;">'+
+                '<div class="border border-light card_inside rounded-circle shadow py-5">'+
+                  '<div style="text-align:center">'+
+                      '<div class="font-weight-bold">'+
+                        '<a href="javascript:contentIndex('+i+'); javascript:get_themenum('+i+');">'+
+                        '<p style="font-size : 20px; text-align : center;">'+theme[i]+'</p>'+
+                        '</a>'+
+                      '</div>'+
+                  '</div>'+
+                '</div>'+
+              '</div>'
+            );
+          }
+          document.write('</div></div>')
+        </script>
+      </div>
+    </div>
+    <div class="container-fluid shadow">
+      <!-- left section content -->
+      <div class="row" style = "min-width: 1080px;">
+        <div class="col-sm-6"  style = " margin-top : 150px; float:left;">
+          <h2 id = "view_start">예약 현황</h2><h2 id = "view_theme">
+            <script>
+              //document.write("hello");
+            </script>
+          </h2>
+          <table class="table table-striped table-hover">
+            <thead class = "thead-dark"> <tr> <th scope="col">예약시간</th> <th scope="col">예약인원</th> <th scope="col">예약자 이름</th> <th scope="col">예약자 정보</th> </tr> </thead>
+            <script>
+              for(var j=0;j<12;j++){
+               document.write('<tbody class="table_area"> </tbody>');
+            }
+            </script>
+          </table>
+        </div>
+        <!-- right section content -->
+        <div class="col-sm-6 "style = "float:left; margin-top: 150px;">
+          <div style = "min-width: 400px; width : 45%; float:left; margin-right: 50px;">
+            <div id="graph_area1" class = "area" style = "margin-left: 60px;  float:left;"></div>
+          </div>
+          <div style = "width : 45%; float:left; ">
+            <div id="graph_area2" class= "area" style = "float:left; "></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+>>>>>>> 8b84941c86e3c2e40cc5f37651338b3ccafd838c
   </body>
 </html>
